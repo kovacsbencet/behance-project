@@ -68,7 +68,7 @@ select {
 
 #root{
     display: grid;
-    grid-template-columns: 0.75fr 3fr 1fr;
+    grid-template-columns: 0.75fr 2.5fr 1fr;
     grid-template-rows: 1fr;
     font-family: 'Poppins', sans-serif;
 }
@@ -86,6 +86,7 @@ main{
     grid-column-end: 3;
     background-color: var(--darkgray);
     height: 100vh;
+    padding: 10px;
 }
 
 #profile{
@@ -167,23 +168,17 @@ main{
 
 /*END OF SIDEBAR CSS PROPERTIES*/
 
-main{
-    display: grid;
-    grid-template-columns: 1f 1fr 1fr;
-    grid-template-rows: 0.25fr 1fr 2fr 2fr;
 
-}
+/*MAIN CSS PROPERTIES*/
+
+/*MAIN HEADER*/
 
 #main-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    margin: 40px 10px 40px 10px;
-    padding: 10px 20px 10px 20px;
+    margin: 40px 0px 40px 0px;
+    padding: 10px 40px 10px 40px;
 }
 
 #main-header h3{
@@ -205,37 +200,40 @@ main{
     padding-left: 5px;
 }
 
-#main-stats{
+
+/*END OF MAIN HEADER*/
+
+
+/*MAIN STATS*/
+
+#main-balance{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    column-gap: 20px;
-    margin-left: 0px;
+    margin-bottom: 20px;
 }
 
-#main-stats div{
+#main-balance div{
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 30%;
     background-color: var(--lightgray);
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 40px;
-    padding-right: 160px;
     border-radius: 10px;
 }
 
-#main-stats div h3{
+#main-balance div h3{
     color: var(--white);
-    padding: 10px 0px;
+    padding: 5px 0px;
     font-size: 2rem;
     letter-spacing: 0.02em;
 }
 
-#main-stats div p{
+#main-balance div p{
     color: var(--white);
-    padding: 10px 0px;
+    padding: 5px 0px;
     font-size: 1rem;
 }
 
@@ -257,4 +255,104 @@ main{
 #changedown span{
     color: var(--red);
     padding-right: 5px;
+}
+
+
+/*END OF MAIN STATS*/
+
+
+/*MAIN DATA CSS PROPERTIES*/
+
+#main-data{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#main-data span{
+    display: flex;
+    align-items: center;
+}
+
+#main-data-1{
+    background-color: var(--lightgray);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+/*     margin-left: 40px;
+    margin-right: 40px; */
+}
+
+#main-data-1 h3{
+    color: var(--white);
+    padding: 10px 0px;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+
+#main-name{
+    padding: 0px 10px;
+    color: var(--white);
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+}
+
+#main-data-transactions{
+    display: flex;
+    justify-content: space-between;
+}
+
+#change, #changedown p{
+    color: var(--white)
+}
+
+#main-data-2{
+    background-color: var(--lightgray);
+    margin: 40px 40px 40px 40px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+#main-data-2 h3{
+    color: var(--white);
+    padding: 10px 0px;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+}
+
+#main-data-2-charts{
+    display: flex;
+
+}
+
+#diagram{
+    background-color: var(--blue);
+    width: 200px;
+    height: 200px;
+    margin: 50px 40px;
+
+}
+
+#diagram-elements{
+    background-color: #70e000;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+#main-activites{
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+#income-activites{
+    background-color: var(--lightgray);
+    color: var(--white);
+}
+
+#quick-transaction{
+    background-color: var(--lightgray);
+    color: var(--white);
 }
