@@ -132,7 +132,7 @@ main{
 
 #update{
     background-color: var(--darkgray);
-    margin: 20px;
+    margin: 40px;
     padding: 20px;
     display: block;
     text-align: center;
@@ -207,34 +207,47 @@ main{
 /*MAIN STATS*/
 
 #main-balance{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 20px;
+    margin: 0px 40px;
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+    column-gap: 40px;
 }
 
 #main-balance div{
-    margin-left: 40px;
-    margin-right: 40px;
-    width: 30%;
     background-color: var(--lightgray);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
+    padding: 40px;
     border-radius: 10px;
 }
 
 #main-balance div h3{
     color: var(--white);
     padding: 5px 0px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 0.02em;
 }
 
 #main-balance div p{
     color: var(--white);
-    padding: 5px 0px;
     font-size: 1rem;
+}
+
+#main-balance-1{
+    background-color: #70e000;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#main-balance-2{
+    background-color: #70e000;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#main-balance-3{
+    background-color: #70e000;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 
 #change{
@@ -264,42 +277,51 @@ main{
 /*MAIN DATA CSS PROPERTIES*/
 
 #main-data{
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0px 40px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 12;
+    grid-template-rows: 1;
+    column-gap: 40px;
 }
 
-#main-data span{
-    display: flex;
-    align-items: center;
-}
 
 #main-data-1{
     background-color: var(--lightgray);
-    padding: 10px 20px 10px 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
     border-radius: 10px;
-/*     margin-left: 40px;
-    margin-right: 40px; */
+    padding: 40px;
+}
+
+#main-data-2{
+    background-color: var(--lightgray);
+    grid-column-start: 2;
+    grid-column-end: 13;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+#main-data-1 span{
+    display: flex;
+    align-items: center;
+}
+
+#main-data-1 img{
+    border-radius: 10px;
 }
 
 #main-data-1 h3{
     color: var(--white);
-    padding: 10px 0px;
     font-size: 1rem;
     letter-spacing: 0.05em;
 }
 
-#main-name{
+#main-data-1-name{
     padding: 0px 10px;
     color: var(--white);
     font-size: 0.9rem;
     letter-spacing: 0.05em;
-}
-
-#main-data-transactions{
-    display: flex;
-    justify-content: space-between;
 }
 
 #change, #changedown p{
@@ -308,8 +330,10 @@ main{
 
 #main-data-2{
     background-color: var(--lightgray);
-    margin: 40px 40px 40px 40px;
-    padding: 10px 20px 10px 20px;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    padding: 40px;
     border-radius: 10px;
 }
 
@@ -320,39 +344,19 @@ main{
     letter-spacing: 0.05em;
 }
 
-#main-data-2-charts{
-    display: flex;
-
+#main-data-2-diagram{
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
-#diagram{
-    background-color: var(--blue);
-    width: 200px;
-    height: 200px;
-    margin: 50px 40px;
-
+#main-data-2-categories{
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
-#diagram-elements{
-    background-color: #70e000;
+#main-data-2-categories div{
+    background-color: #1557FE;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    margin: 20px;
-}
-
-#main-activites{
-    margin-left: 40px;
-    margin-right: 40px;
-    display: flex;
-    align-items: center;
-}
-
-#income-activites{
-    background-color: var(--lightgray);
-    color: var(--white);
-}
-
-#quick-transaction{
-    background-color: var(--lightgray);
-    color: var(--white);
 }
