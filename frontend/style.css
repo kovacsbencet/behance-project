@@ -68,7 +68,7 @@ select {
 
 #root{
     display: grid;
-    grid-template-columns: 0.75fr 2.5fr 1fr;
+    grid-template-columns: 0.75fr 2.5fr 0.75fr;
     grid-template-rows: 1fr;
     font-family: 'Poppins', sans-serif;
 }
@@ -359,4 +359,42 @@ main{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+
+#profile h3{
+    color: var(--white);
+    margin-top: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    margin-left: 20px;
+}
+
+
+
+#profilename{
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px 10px 40px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+#profilename img{
+    border-radius: 10px;
+}
+
+#profile-expanse{
+    color: var(--white);
+    display: flex;
+    justify-content: flex-start;
+}
+
+#profile-expanse p{
+    padding-left: 20px;
+}
+
+#profile-transactions{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
 }
